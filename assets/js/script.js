@@ -324,3 +324,57 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.opacity = "1";
   }, 100);
 });
+
+// Modal functionality
+document.addEventListener("DOMContentLoaded", () => {
+  // Get modal elements
+  const privacyModal = document.getElementById("privacyModal");
+  const termsModal = document.getElementById("termsModal");
+  const privacyLink = document.getElementById("privacyLink");
+  const termsLink = document.getElementById("termsLink");
+  const closeButtons = document.querySelectorAll(".close");
+
+  // Open modals
+  privacyLink?.addEventListener("click", (e) => {
+    e.preventDefault();
+    privacyModal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  });
+
+  termsLink?.addEventListener("click", (e) => {
+    e.preventDefault();
+    termsModal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  });
+
+  // Close modals
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modalId = button.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Restore scrolling
+      }
+    });
+  });
+
+  // Close modal when clicking outside
+  window.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal")) {
+      e.target.style.display = "none";
+      document.body.style.overflow = "auto"; // Restore scrolling
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      const openModal = document.querySelector('.modal[style*="block"]');
+      if (openModal) {
+        openModal.style.display = "none";
+        document.body.style.overflow = "auto"; // Restore scrolling
+      }
+    }
+  });
+});
