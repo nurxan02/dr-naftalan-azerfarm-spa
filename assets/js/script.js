@@ -256,9 +256,7 @@ window.addEventListener("load", () => {
   loader.className = "loader";
   loader.innerHTML = `
         <div class="loader-content">
-            <div class="loader-icon">
-                <i class="fas fa-tint"></i>
-            </div>
+            <img src="./assets/img/logo/white.png" alt="Loading..." class="loader-icon">
             <div class="loader-text">Dr. Naftalan</div>
             <div class="loader-spinner"></div>
         </div>
