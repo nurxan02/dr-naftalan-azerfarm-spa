@@ -1,3 +1,36 @@
+// Performance optimization: Preload critical resources
+document.addEventListener("DOMContentLoaded", function () {
+  // Preload hero image
+  const heroImageLink = document.createElement("link");
+  heroImageLink.rel = "preload";
+  heroImageLink.as = "image";
+  heroImageLink.href = "./assets/img/material/cream.png";
+  document.head.appendChild(heroImageLink);
+
+  // Update hamburger button accessibility
+  const hamburgerBtn = document.querySelector(".hamburger");
+  if (hamburgerBtn) {
+    hamburgerBtn.addEventListener("click", function () {
+      const expanded = this.getAttribute("aria-expanded") === "true";
+      this.setAttribute("aria-expanded", !expanded);
+    });
+  }
+});
+
+// Add loading performance tracking
+window.addEventListener("load", function () {
+  // Track page load time for analytics
+  const loadTime =
+    performance.timing.loadEventEnd - performance.timing.navigationStart;
+  console.log("Page load time:", loadTime + "ms");
+
+  // Add schema.org markup for page load time
+  const performanceMeta = document.createElement("meta");
+  performanceMeta.name = "page-load-time";
+  performanceMeta.content = loadTime + "ms";
+  document.head.appendChild(performanceMeta);
+});
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

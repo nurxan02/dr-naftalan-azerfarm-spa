@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://drnaftalan.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Disallow access to sensitive files
+Disallow: /assets/js/
+Disallow: /*.pdf$
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important directories
+Allow: /assets/css/
+Allow: /assets/img/
+
+# Special rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1

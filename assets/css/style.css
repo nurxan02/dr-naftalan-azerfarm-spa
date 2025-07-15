@@ -36,6 +36,25 @@ body {
   overflow-x: hidden;
 }
 
+/* Skip to content link for accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -80px;
+  left: 6px;
+  background: var(--primary-gold);
+  color: var(--dark-bg);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  z-index: 10000;
+  transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+  top: 6px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -132,6 +151,8 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  background: transparent;
+  border: none;
 }
 
 .hamburger span {
