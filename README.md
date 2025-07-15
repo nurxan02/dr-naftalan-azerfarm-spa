@@ -1,16 +1,16 @@
-# Dr. Naftalan - Naftalan Kremi Web Sitesi
+# Dr. Naftalan - Naftalan Cream Website
 
-Bu proje, Dr. Naftalan naftalan kremi için tasarlanmış modern ve responsive bir single page web uygulamasıdır.
+This project is a modern and responsive single-page web application designed for Dr. Naftalan naftalan cream.
 
-## Özellikler
+## Features
 
-### 🎨 Tasarım
+### 🎨 Design
 
-- Modern ve şık tasarım
-- Altın renk paleti (luxury tema)
-- Koyu arka plan ile kontrast
-- Responsive tasarım (mobil uyumlu)
-- Smooth scroll ve animasyonlar
+- Modern and elegant design
+- Gold color palette (luxury theme)
+- Dark background with contrast
+- Responsive design (mobile-friendly)
+- Smooth scroll and animations
 
 ### 📱 Responsive Design
 
@@ -19,72 +19,93 @@ Bu proje, Dr. Naftalan naftalan kremi için tasarlanmış modern ve responsive b
 - Mobile (480px - 767px)
 - Small Mobile (<480px)
 
-### 🚀 Performans
+### 🚀 Performance
 
-- CSS3 animasyonlar
+- CSS3 animations
 - Smooth scrolling
 - Lazy loading
 - Debounced scroll handlers
-- Optimize edilmiş görüntüler
+- Optimized images
+- SEO optimized for Russian market
 
-### 🎯 Bölümler
+### 🎯 Sections
 
-1. **Hero Section** - Ana banner ve ürün tanıtımı
-2. **About** - Marka değerleri ve misyon
-3. **Product Details** - Ürün detayları ve faydaları
-4. **Statistics** - Satış istatistikleri (WB, OZON)
-5. **Business** - İş ortaklığı fırsatları
-6. **Contact** - İletişim bilgileri
+1. **Hero Section** - Main banner and product introduction
+2. **About** - Brand values and mission
+3. **Product Details** - Product details and benefits
+4. **Statistics** - Sales statistics (Wildberries, OZON)
+5. **Business** - Business partnership opportunities
+6. **Contact** - Contact information
 
-### 💫 Etkileşimli Özellikler
+### 💫 Interactive Features
 
-- Hamburger menu (mobil)
-- Scroll reveal animasyonlar
+- Hamburger menu (mobile)
+- Scroll reveal animations
 - Hover effects
 - Interactive product showcase
 - Counter animations
-- Typing effect
-- Loading screen
+- Modal popups for legal pages
+- Accessibility features
 
-## Teknolojiler
+### 🔍 SEO Features
 
-- **HTML5** - Semantic markup
+- Comprehensive meta tags for Russian market
+- Open Graph and Twitter Card optimization
+- Structured data (JSON-LD) markup
+- Sitemap.xml and robots.txt
+- Performance optimization
+- Security headers
+- Accessibility compliance
+
+## Technologies
+
+- **HTML5** - Semantic markup with accessibility
 - **CSS3** - Modern styling, flexbox, grid
-- **Vanilla JavaScript** - Etkileşimler ve animasyonlar
-- **Font Awesome** - İkonlar
+- **Vanilla JavaScript** - Interactions and animations
+- **Font Awesome** - Icons
 - **Google Fonts** - Typography (Playfair Display, Inter)
+- **Schema.org** - Structured data markup
 
-## Kurulum
+## Installation
 
-1. Projeyi indirin veya clone edin
-2. `index.html` dosyasını bir web tarayıcısında açın
-3. Veya bir local server kullanın:
+1. Download or clone the project
+2. Open `index.html` in a web browser
+3. Or use a local server:
 
    ```bash
-   # Python ile
+   # With Python
    python -m http.server 8000
 
-   # Node.js ile
+   # With Node.js
    npx serve
 
-   # VS Code Live Server extension ile
+   # With VS Code Live Server extension
    ```
 
-## Dosya Yapısı
+## File Structure
 
 ```
-DrNaftalan/
-├── index.html      # Ana HTML dosyası
-├── style.css       # CSS stilleri
-├── script.js       # JavaScript fonksiyonları
-└── README.md       # Bu dosya
+dr-naftalan-azerfarm-spa/
+├── index.html          # Main HTML file
+├── sitemap.xml         # SEO sitemap
+├── robots.txt          # Search engine instructions
+├── .htaccess          # Server configuration
+├── assets/
+│   ├── css/
+│   │   └── style.css   # CSS styles
+│   ├── js/
+│   │   └── script.js   # JavaScript functions
+│   └── img/
+│       ├── logo/       # Brand logos
+│       └── material/   # Product images
+└── README.md          # This file
 ```
 
-## Özelleştirme
+## Customization
 
-### Renkler
+### Colors
 
-CSS'deki `:root` değişkenlerini değiştirerek renk paletini özelleştirebilirsiniz:
+You can customize the color palette by changing the `:root` variables in CSS:
 
 ```css
 :root {
@@ -96,46 +117,73 @@ CSS'deki `:root` değişkenlerini değiştirerek renk paletini özelleştirebili
 }
 ```
 
-### Animasyonlar
+### Animations
 
-`script.js` dosyasında animasyon sürelerini ve efektlerini ayarlayabilirsiniz.
+You can adjust animation durations and effects in the `script.js` file.
 
-### İçerik
+### Content
 
-HTML dosyasındaki metinleri ve bilgileri ihtiyacınıza göre güncelleyebilirsiniz.
+Update texts and information in the HTML file according to your needs.
 
-## Tarayıcı Desteği
+## SEO Configuration
+
+The website is optimized for:
+
+- Russian market targeting
+- Medical and cosmetic keywords
+- Marketplace integration (Wildberries, OZON)
+- Local business schema
+- Performance and accessibility
+
+### Key SEO Elements:
+
+- Meta tags optimized for "нафталановый крем"
+- Structured data for product and organization
+- Social media optimization
+- Technical SEO best practices
+
+## Browser Support
 
 - Chrome 60+
 - Firefox 55+
 - Safari 12+
 - Edge 79+
 
-## Performans İpuçları
+## Performance Tips
 
-- Görüntüleri WebP formatında kullanın
-- CSS ve JS dosyalarını minify edin
-- CDN kullanın
-- Lazy loading uygulayın
+- Use WebP format for images
+- Minify CSS and JS files
+- Use CDN
+- Implement lazy loading
+- Enable GZIP compression
 
-## Katkıda Bulunma
+## Contributing
 
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Create a Pull Request
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+This project is licensed under the MIT License.
 
-## İletişim
+## Contact
 
 Dr. Naftalan  
+Website: https://drnaftalan.com  
 Email: dr.naftalan@yandex.com  
-Tel: +994-70-747-88-88
+Tel: +994-70-747-88-88 / +7 (918) 747-88-88
+
+## Deployment
+
+The website is optimized for deployment to:
+
+- Static hosting services (Netlify, Vercel)
+- Traditional web hosting with Apache/Nginx
+- CDN services for global distribution
 
 ---
 
-_Bu web sitesi Dr. Naftalan naftalan kremi için özel olarak tasarlanmıştır._
+_This website is specially designed for Dr. Naftalan naftalan cream targeting the Russian healthcare market._
